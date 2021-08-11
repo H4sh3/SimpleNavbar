@@ -9,10 +9,11 @@ const SimpleNavbar: React.FC<SimpleNavbarProps> = ({ children, links, logo }) =>
     const [menuOpen, setMenuOpen] = useState(false)
 
     const [shrink, setShrink] = useState(false)
-    
-    window.onscroll = function () {
-        scrollFunction()
-    };
+    if (typeof window !== 'undefined') {
+        window.onscroll = function () {
+            scrollFunction()
+        };
+    }
 
     function scrollFunction() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
