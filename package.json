@@ -1,6 +1,6 @@
 {
   "name": "zeta-navbar",
-  "version": "0.0.425",
+  "version": "0.1.0",
   "description": "Simple navbar that changes for desktop and mobile",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -21,7 +21,7 @@
   "dependencies": {
     "react": "17.0.2"
   },
-  "files":[
+  "files": [
     "/lib"
   ]
 }
