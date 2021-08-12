@@ -32,7 +32,7 @@ const SimpleNavbar: React.FC<SimpleNavbarProps> = ({ children, links, logo, maxM
     return (
         <div>
             <div id="header" style={{ "transition": "all .4s ease-in-out", "height": navbarHeight }}
-                className={`z-10 fixed top-0 left-0 w-full text-white hover:${bgColorOnHover} navbarGradient`}>
+                className={`z-10 fixed top-0 left-0 w-full text-white hover:${bgColorOnHover} navbarGradient shadow`}>
                 <div className="h-full flex justify-between items-center gap-4">
                     <div>
                         {logo}
@@ -54,7 +54,7 @@ const SimpleNavbar: React.FC<SimpleNavbarProps> = ({ children, links, logo, maxM
                 </div>
             </div>
             <div style={{ "height": "6vh" }}></div>
-            <div className="lg:hidden z-9 fixed w-full bg-gray-100" style={{ opacity: menuOpen ? 1 : 0, "height": menuOpen ? maxMenuVh : '0vh', "transition": "all 0.4s ease-in-out" }}>
+            <div className="lg:hidden shadow z-9 fixed w-full bg-gray-100" style={{ opacity: menuOpen ? 1 : 0, "height": menuOpen ? maxMenuVh : '0vh', "transition": "all 0.4s ease-in-out" }}>
                 {
                     menuOpen ?
                         <div style={{ "height": menuOpen ? '90vh' : '0vh', "transition": "all 0.4s ease-in-out" }}>
